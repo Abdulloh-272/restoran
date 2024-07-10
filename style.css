@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.animate {
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: animate;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-hover:hover i {
+  color: white;
+}
+
+.about,
+.food {
+  font-family: "Pacifico", cursive;
+}
+
+/* .hover1 {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+} */
+
+.card-p {
+  height: 410px;
+}
+
+.hovimg {
+  transition: all 0.5s ease-in-out;
+}
+
+.hover1:hover .hovimg {
+  transform: scale(1.2);
+}
+
+.hover1 {
+  height: 360px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover1 {
+  height: 340px;
+}
+.hover1:hover {
+  height: 400px;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(158, 154, 154);
+  padding: 12px 5px;
+}
+
+swiper-slide:hover {
+  background-color: #fea116;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
